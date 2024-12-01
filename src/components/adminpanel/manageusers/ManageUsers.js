@@ -6,16 +6,13 @@ import { IoSearchOutline } from "react-icons/io5";
 import { IoMdAdd } from "react-icons/io";
 import { RiToggleLine, RiToggleFill } from "react-icons/ri";
 
-//Importing ThemeContext
 import { useTheme } from "../../context/ThemeContext";
 
-// Importing components
 import AddUserModal from "../manageusers/AddUser";
 import EditUserModal from "../manageusers/EditUser";
 import Sidebar from "../../common/Sidebar";
 import SmallscreenSidebar from "../../common/SmallscreenSidebar";
 
-// Importing images
 import img1 from "../../../media/avatars/Avatar1.png";
 import img2 from "../../../media/avatars/Avatar2.png";
 import img3 from "../../../media/avatars/Avatar3.png";
@@ -23,7 +20,6 @@ import img4 from "../../../media/avatars/Avatar4.png";
 import img8 from "../../../media/avatars/Avatar8.png";
 import defaultImg from "../../../media/avatars/default.jpg";
 
-// Styled Components
 const ManageUsersContainer = styled.div`
   display: flex;
   height: 80vh;
@@ -308,7 +304,6 @@ const UserAvatar = styled.img`
   object-fit: cover;
 `;
 
-// Styled components specific to small screens
 
 const SmallScreenCardContainer = styled.div`
   @media (max-width: 768px) {
@@ -436,7 +431,6 @@ const ManageUsers = () => {
     userToEdit: null,
   });
 
-  // Filter users based on search query
   const filteredUsers = useMemo(
     () =>
       users.filter((user) =>
@@ -445,7 +439,6 @@ const ManageUsers = () => {
     [searchQuery, users]
   );
 
-  // Add a new user
   const handleAddUser = (newUser) => {
     const newUserId = users.length > 0 ? users[users.length - 1].id + 1 : 1;
     const userWithDefaultImage = {
@@ -458,7 +451,6 @@ const ManageUsers = () => {
     setModalState({ isOpen: false, isEditMode: false, userToEdit: null });
   };
 
-  // Toggle user status
   const handleToggleStatus = (id) => {
     setUsers((prevUsers) =>
       prevUsers.map((user) =>
@@ -472,12 +464,10 @@ const ManageUsers = () => {
     );
   };
 
-  // Edit an existing user
   const handleEditUser = (user) => {
     setModalState({ isOpen: true, isEditMode: true, userToEdit: user });
   };
 
-  // Update an existing user
   const handleUpdateUser = (updatedUser) => {
     setUsers((prevUsers) =>
       prevUsers.map((user) => (user.id === updatedUser.id ? updatedUser : user))
@@ -485,21 +475,18 @@ const ManageUsers = () => {
     setModalState({ isOpen: false, isEditMode: false, userToEdit: null });
   };
 
-  // Delete a user with confirmation
   const handleDeleteUser = (id) => {
     if (window.confirm("Are you sure you want to delete this user?")) {
       setUsers((prevUsers) => prevUsers.filter((user) => user.id !== id));
     }
   };
 
-  // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
   const usersPerPage = 5;
 
   const startId = (currentPage - 1) * usersPerPage + 1;
   const endId = currentPage * usersPerPage;
 
-  // Filter users based on the calculated ID range
   const currentUsers = filteredUsers.filter(
     (user) => user.id >= startId && user.id <= endId
   );

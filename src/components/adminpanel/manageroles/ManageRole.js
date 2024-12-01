@@ -4,15 +4,12 @@ import { MdOutlineDelete } from "react-icons/md";
 import { IoMdAdd } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
 
-//Importing ThemeContext
 import { useTheme } from "../../context/ThemeContext";
 
-//Importing components
 import Sidebar from "../../common/Sidebar";
-import AddRoleModal from "./AddRole";
+import AddRoleModal from "../manageroles/AddRole";
 import SmallscreenSidebar from "../../common/SmallscreenSidebar";
 
-// Importing images for user avatars
 import img1 from "../../../media/avatars/Avatar1.png";
 import img2 from "../../../media/avatars/Avatar2.png";
 import img3 from "../../../media/avatars/Avatar3.png";
@@ -24,7 +21,6 @@ import img8 from "../../../media/avatars/Avatar8.png";
 import img9 from "../../../media/avatars/Avatar9.png";
 import img10 from "../../../media/avatars/Avatar10.png";
 
-// Styled Components
 const ManageRolesContainer = styled.div`
   display: flex;
   height: 80vh;
@@ -217,7 +213,6 @@ const PageButton = styled.button`
   }
 `;
 
-// Styled components specific to small screens
 
 const SmallScreenContainer = styled.div`
   @media (max-width: 768px) {

@@ -12,7 +12,6 @@ import Permission from "./components/adminpanel/managepermission/Permission";
 import { ThemeProvider } from "./components/context/ThemeContext";
 import SignIn from "./components/authentication/SignIn";
 
-
 function App() {
   return (
     <ThemeProvider>

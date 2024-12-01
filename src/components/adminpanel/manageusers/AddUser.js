@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useTheme } from "../../context/ThemeContext";
 
-// Styled Components 
 const ModalBackground = styled.div`
   position: fixed;
   top: 0;
@@ -146,7 +145,6 @@ function AddUser({ isOpen, onClose, onSave }) {
     }));
   };
 
-  // Validation rules
   const validateFields = () => {
     if (!username.trim()) {
       setError("Name cannot be empty.");
@@ -187,8 +185,8 @@ function AddUser({ isOpen, onClose, onSave }) {
         id: Date.now(),
         username,
         email,
-        status: "Active", // Default status
-        imageUrl: "path_to_default_avatar", // Default image URL
+        status: "Active", 
+        imageUrl: "path_to_default_avatar", 
       };
       onSave(newUser);
       setUsername("");

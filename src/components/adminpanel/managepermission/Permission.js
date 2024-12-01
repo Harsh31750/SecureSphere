@@ -9,7 +9,6 @@ import AddPermissionModal from "../managepermission/AddPermission";
 import Sidebar from "../../common/Sidebar";
 import SmallscreenSidebar from "../../common/SmallscreenSidebar";
 
-// Importing images for user avatars
 import img1 from "../../../media/avatars/Avatar1.png";
 import img2 from "../../../media/avatars/Avatar2.png";
 import img3 from "../../../media/avatars/Avatar3.png";
@@ -21,7 +20,6 @@ import img8 from "../../../media/avatars/Avatar8.png";
 import img9 from "../../../media/avatars/Avatar9.png";
 import img10 from "../../../media/avatars/Avatar10.png";
 
-// Styled Components
 const ManagePermissionsContainer = styled.div`
   display: flex;
   height: 80vh;
@@ -199,7 +197,6 @@ const PaginationButton = styled.button`
   }
 `;
 
-// Styled components specific to small screens
 
 const SmallScreenContainer = styled.div`
   @media (max-width: 768px) {
@@ -246,7 +243,6 @@ const UserAvatar = styled.img`
   object-fit: cover;
 `;
 
-// Styled components specific to small screens
 
 const SmallScreenCardContainer = styled.div`
   @media (max-width: 768px) {
@@ -389,11 +385,9 @@ const Permission = () => {
     permissionToEdit: null,
   });
 
-  // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
 
-  // Filter users based on search query
   const filteredUsers = useMemo(
     () =>
       users.filter((user) =>
@@ -447,7 +441,6 @@ const Permission = () => {
             : user
         );
       });
-      // Ensure the `permissions` state is updated as well if necessary
       setPermissions((prevPermissions) =>
         prevPermissions.filter((perm) => perm.permission !== permission)
       );
