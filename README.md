@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+## Frontend Project
+This repository includes the frontend code developed for the VRV Security assignment, part of the application process for the Frontend Intern position. The project is built using React.js and aims to create a seamless, responsive Role-Based Access Control (RBAC) interface for managing user roles and permissions efficiently.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Summary
+The RBAC user interface is built to assist administrators in managing users, roles, and permissions. It provides key functionalities such as:
 
-## Available Scripts
+1.Creating, editing, and deleting user accounts
+2.Dynamically assigning roles and permissions to users
+3.Searching and filtering users efficiently
 
-In the project directory, you can run:
+## Key Features
+1.Dashboard: Get a detailed overview of users and their associated roles within the system.
+2.User Management: Add, modify, or remove users, while also managing their active/inactive status.
+3.Role Management: Create new roles, update existing ones, and delete roles when needed.
+4.Permission Management: Assign and adjust permissions for roles in real-time.
+5.Search and Filter: Easily search users by their name or email and apply filters to streamline results.
 
-### `npm start`
+## Technologies Implemented
+1.React.js: Utilized for developing the user interface.
+2.React Router: Used for handling navigation and routing between different pages.
+3.Styled-components: Employed for CSS-in-JS styling to maintain modular and scoped styles.
+4.Context API: Leveraged to manage global state, such as theme management and shared data across components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Setup Instructions
+To begin working with this project, follow the steps outlined below:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the Repository
+Start by cloning the repository to your local machine using the following command:
+     
+    git clone https://github.com/janhvi-pandey/VRV-Security-Frontend-Assignment.git
+        
 
-### `npm test`
+2. Change into the project folder using the following command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    - cd VRV-Security-Frontend-Assignment/ 
+    - cd frontend/
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install Dependencies
+Install all necessary dependencies by running the following command:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    npm install
+  
+4. Launch the Application
+Start the development server by executing the following command:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    npm start
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This will launch the app at http://localhost:3000. You can now open the application in your browser.
