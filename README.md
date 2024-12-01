@@ -27,7 +27,7 @@ To begin working with this project, follow the steps outlined below:
 1. Clone the Repository
 Start by cloning the repository to your local machine using the following command:
      
-    git clone https://github.com/janhvi-pandey/VRV-Security-Frontend-Assignment.git
+    git clone https://git@github.com:Harsh31750/SecureSphere.git
         
 
 2. Change into the project folder using the following command:
