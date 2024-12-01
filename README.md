@@ -28,20 +28,14 @@ To begin working with this project, follow the steps outlined below:
 Start by cloning the repository to your local machine using the following command:
      
     git clone https://git@github.com:Harsh31750/SecureSphere.git
-        
-
-2. Change into the project folder using the following command:
-
-    - cd VRV-Security-Frontend-Assignment/ 
-    - cd frontend/
 
 
-3. Install Dependencies
+2. Install Dependencies
 Install all necessary dependencies by running the following command:
 
     npm install
   
-4. Launch the Application
+3. Launch the Application
 Start the development server by executing the following command:
 
     npm start
