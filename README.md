@@ -1,5 +1,5 @@
 ## Frontend Project
-This repository includes the frontend code developed for the VRV Security assignment, part of the application process for the Frontend Intern position. The project is built using React.js and aims to create a seamless, responsive Role-Based Access Control (RBAC) interface for managing user roles and permissions efficiently.
+This repository includes the frontend code which is built using React.js and aims to create a seamless, responsive Role-Based Access Control (RBAC) interface for managing user roles and permissions efficiently.
 
 ## Project Summary
 The RBAC user interface is built to assist administrators in managing users, roles, and permissions. It provides key functionalities such as:
